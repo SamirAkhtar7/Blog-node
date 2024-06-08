@@ -1,0 +1,16 @@
+<%- include('header');%>
+    
+
+<form action="/compose" class="container py-5" method="POST">
+    <div class="mb-3">
+  <label for="" class="form-label fw-bold">Title</label>
+  <input type="text" class="form-control"id="posttitle" name="posttitle" placeholder="Enter you Blog Title">
+</div>
+<div class="mb-3">
+  <label for="posttext" class="form-label fw-bolda">Blog text</label>
+  <textarea class="form-control " id="posttext" rows="6" name="posttext" ></textarea>
+</div>
+<button type="submit" class=" btn btn-secondary" name="postbutton">Post</button>
+</form>
+    
+<%- include('footer');%>

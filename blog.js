@@ -4,7 +4,7 @@ app.set('view engine', 'ejs');
 const blogroutes = require('./routes/blogroutes');
 
 app.use(express.static('pubilc'));
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({extended:true}));
 
 
 app.use("/", blogroutes);

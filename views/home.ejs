@@ -1,4 +1,9 @@
 <%- include('header');%>
     <h1>Home</h1>
+<% allposts.forEach((post)=>{ %>
+ <h3><%= post.title%></h3>
+ <p class="fst-ilalic"> <small><mark> <%=post.date%></mark></small> </p>
+ <p><%=post.text.substring(0,200)%> <a href="/search?q=<%=post.title%>">Read more</a> </p>
+<% }) %>
     
 <%- include('footer');%>
